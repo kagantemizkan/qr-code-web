@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>QR Code Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>QR Code Generator v0.1</h1>
-        <p>Paste a url or enter text to create QR code</p>
-      </header>
-      <div class="form">
-        <input type="text" spellcheck="false" placeholder="Enter text or url">
-        <button>Generate QR Code</button>
+
+<head>
+  <meta charset="utf-8">
+  <title>QR Code Generator v0.1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="w-100">
+    <div class="container-fluid qr-header bg-black d-flex justify-content-between">
+      <div class="d-flex">
+        <img src="./components/img/logo.svg" class="img-fluid p-2">
+        <h1 id="logoText" class="text-white"><a class="nav-link text-white" href="index.html">QR Generator</a>
+        </h1>
       </div>
-      <div class="qr-code">
-        <img src="" alt="qr-code">
-      </div>
+      <p id="aboutUs" class="text-white p-2"><a class="nav-link text-white" href="index.html">About Us</a></p>
     </div>
 
-    <script src="script.js"></script>
+    <div id="qr-Area" class="container bg-black mt-5 p-5 w-100">
+      <div class="wrapper">
+        <div class="form-group text-center">
+          <h2 class="text-white text-left">Enter your text</h2>
+          <textarea type="text" class="form-control qr-input"></textarea>
+          <button id="createQr" class="text-center mt-4">Create Qr Code</button>
+        </div>
+        <div id="qrCode" class="qr-code">
+          <img src="" alt="qr-code">
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
-  </body>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
