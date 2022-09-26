@@ -1,24 +1,23 @@
-const wrapper = document.querySelector(".wrapper"),
-qrInput = wrapper.querySelector(".form input"),
-generateBtn = wrapper.querySelector(".form button"),
-qrImg = wrapper.querySelector(".qr-code img");
-let preValue;
+const createButton = document.getElementById('createQr')
 
-generateBtn.addEventListener("click", () => {
-    let qrValue = qrInput.value.trim();
-    if(!qrValue || preValue === qrValue) return;
-    preValue = qrValue;
-    generateBtn.innerText = "Generating QR Code...";
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
-    qrImg.addEventListener("load", () => {
-        wrapper.classList.add("active");
-        generateBtn.innerText = "Generate QR Code";
-    });
-});
+createButton.addEventListener('click', createQRCode);
 
-qrInput.addEventListener("keyup", () => {
-    if(!qrInput.value.trim()) {
-        wrapper.classList.remove("active");
-        preValue = "";
-    }
-});
+const QRContainer = document.getElementById("qrCode")
+
+
+
+function createQRCode() {
+
+
+
+    QRContainer.innerHTML = "";
+
+
+    const text = document.getElementById('user-text').value;
+
+    new QRCode(QRContainer, text)
+    
+    QRContainer.style.backgroundColor == "#FECB11"
+
+}
+

@@ -65,3 +65,11 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+
+.qr-code {
+  background-color: #FECB11;
+  width: 306px;
+  height: 306px;
+  padding: 25px;
+  border-radius: 10px;
+}

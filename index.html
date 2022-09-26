@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
 <body>
 
   <div class="w-100">
@@ -24,23 +25,28 @@
     </div>
 
     <div id="qr-Area" class="container bg-black mt-5 p-5 w-100">
-      <div class="wrapper">
+      <div class="wrapper d-flex justify-content-around align-items-center">
         <div class="form-group text-center">
           <h2 class="text-white text-left">Enter your text</h2>
-          <textarea type="text" class="form-control qr-input"></textarea>
+
+          <textarea type="text" class="form-control qr-input" id="user-text"></textarea>
+          
           <button id="createQr" class="text-center mt-4">Create Qr Code</button>
+        
         </div>
-        <div id="qrCode" class="qr-code">
-          <img src="" alt="qr-code">
+       
+        <div id="qrCode" class="qr-code"></div>
         </div>
       </div>
     </div>
     
   </div>
+  
 
-  <script src="script.js"></script>
+  <script src="qr.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
 
 </body>
