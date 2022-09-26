@@ -57,6 +57,7 @@ body {
 button {
   width: 10rem;
   padding: 10px;
+  border-radius: 7px;
 }
 
 #createQr {

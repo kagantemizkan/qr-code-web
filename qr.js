@@ -16,7 +16,7 @@ function createQRCode() {
     const text = document.getElementById('user-text').value;
 
     new QRCode(QRContainer, text)
-    
+
     QRContainer.style.backgroundColor == "#FECB11"
 
 }
