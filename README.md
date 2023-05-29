@@ -13,4 +13,4 @@ Kullanıcılar metin girdikten sonra "Create QR Code" butonuna tıklayarak QR ko
 + CSS3 (Bootstrap 4.4.1)
 + JavaScript (qr.js, jQuery, popper.js, qrcode.min.js)
 
-![screencapture-file-C-Users-ktemi-OneDrive-Masaustu-qr-code-web-master-index-html-2023-05-30-02_45_51](https://github.com/kagantemizkan/qr-code-web/assets/46727689/3f707ffd-7a1c-4d3b-8d74-bae5dbf25b7e)
+![resim1](https://github.com/kagantemizkan/qr-code-web/assets/46727689/3f707ffd-7a1c-4d3b-8d74-bae5dbf25b7e)
